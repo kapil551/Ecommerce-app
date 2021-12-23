@@ -1,44 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Learning Redux by building an E-commerce Site
 
-## Available Scripts
+0. Overview:
 
-In the project directory, you can run:
+    - React.js is a libarary that wraps around the HTML, CSS, and JavaScript.
 
-### `npm start`
+    - React.js only re-renders the component which is being updated by passing props or state update.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    - Redux is a global state management library.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+    - Redux prevents the problem of prop drilling.
 
-### `npm test`
+    - Redux wraps the entire react application with a global store.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - This global store can be accessed by or updated by any component at any level of the react tree.
 
-### `npm run build`
+    - It also spilts the global store into different "slices".
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - Pull information from global store using "selectors".
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+    - Push information into the global store using "dispatch action".
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+1. Imp Links:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    - npx create-react-app ecommerce-app --template redux
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    - https://create-react-app.dev/docs/getting-started/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    - https://redux.js.org/introduction/getting-started
 
-## Learn More
+    - https://redux.js.org/tutorials/quick-start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    - Create a Redux Store:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+        - https://redux.js.org/tutorials/quick-start#create-a-redux-store
