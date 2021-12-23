@@ -1,5 +1,9 @@
 # Learning Redux by building an E-commerce Site
 
+0. Understande Redux Lifecycle/ Redux Data Flow:
+
+    - https://dev.to/oahehc/redux-data-flow-and-react-component-life-cycle-11n
+
 0. Overview:
 
     - React.js is a libarary that wraps around the HTML, CSS, and JavaScript.
@@ -19,6 +23,26 @@
     - Pull information from global store using "selectors".
 
     - Push information into the global store using "dispatch action".
+
+1. React Essentials/Core Concepts:
+
+    - State Management:
+
+        - https://redux.js.org/tutorials/essentials/part-1-overview-concepts#state-management
+
+    - Redux expects that all state updates are done "immutably":
+    
+        - https://redux.js.org/tutorials/essentials/part-1-overview-concepts#immutability
+
+        - https://daveceddia.com/react-redux-immutability-guide/
+    
+    - Terminology:
+
+        - Actions:
+
+            - https://redux.js.org/tutorials/essentials/part-1-overview-concepts#actions
+
+        - 
 
 
 1. Imp Links:
