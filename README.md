@@ -50,7 +50,11 @@
 
     - useSelector hook in react-redux:
 
-        - 
+        - Pull information from global store using "selectors".
+    
+    - useDispatch() hook in react-redux:
+
+        - Push information into the global store using "dispatch action"
 
 
 1. Imp Links:

@@ -12,10 +12,32 @@ export const basketSlice = createSlice({
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
     addItemToBakset: (state, action) => {
-      state.value += action.payload;
+
+        // whenever I dispatch action for "addItemToBasket", updae the state of items
+        // array as whatever is inside the items array keep it and add a new action.payload to it.
+        state.items = [...state.items, action.payload];
     },
     removeItemFromBakset: (state, action) => {
-      state.value += action.payload;
+
+        // use the id that we passed and remove the item from basket with that id
+        let copyOfBasket = [...state.items];
+
+        // find the index of the element in the items array with the id.
+        const index = state.items.findIndex((item) => {
+            return item.id === action.payload.id;
+        });
+
+       if(index !== -1) {
+
+         // Splice the item out of the basket
+         copyOfBasket.splice(index, 1);
+         state.items = copyOfBasket;
+       } 
+       else {
+         alert('Item does not exist in the basket');
+       }
+
+
     },
   },
 });

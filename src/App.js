@@ -39,9 +39,9 @@ function App() {
       </header>
 
       {/* Product */}
-      <Product title="Apple iPhone 13 2021" />
-      <Product title="Nike Sports Shoes" />
-      <Product title="Rubix Cube"/>
+      <Product id="9920" title="Apple iPhone 13 2021" />
+      <Product id="9925" title="Nike Sports Shoes" />
+      <Product id="9939" title="Rubix Cube"/>
 
 
     </div>
