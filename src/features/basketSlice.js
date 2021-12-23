@@ -23,9 +23,10 @@ export const basketSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const { addItemToBakset, removeItemFromBakset } = basketSlice.actions;
 
+// Selector
 // The function below is called a selector and allows us to select a value from
 // the state. 
-// Selectors can also be defined inline where they're used instead of
 export const selectItems = (state) => state.basket.items;
+export const selectItemsCount = (state) => state.basket.items.length;
 
 export default basketSlice.reducer;
