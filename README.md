@@ -59,3 +59,7 @@
     - Create a Redux Store:
 
         - https://redux.js.org/tutorials/quick-start#create-a-redux-store
+    
+    - Installing tailwindcss:
+
+        - https://tailwindcss.com/docs/guides/create-react-app
