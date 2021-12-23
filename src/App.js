@@ -1,8 +1,22 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import './App.css';
 import Product from './components/Product';
 
+import { selectItems, selectItemsCount } from './features/basketSlice';
+
 function App() {
+
+  // useSelector hook:
+  // selectItems is a "selector" function defined inside basketSlice 
+  const items = useSelector(selectItems);
+  // selectItemsCount is a "selector" function
+  const itemsCount = useSelector(selectItemsCount);
+
+  console.log("The items are ", items);
+  console.log("The items count is ", itemsCount);
+
+
   return (
     <div className="">
 
@@ -18,7 +32,7 @@ function App() {
 
           {/* right section */}
           <div>
-            <h3> Items in your basket 0 </h3>
+            <h3> Items in your basket {itemsCount} </h3>
 
           </div>
 

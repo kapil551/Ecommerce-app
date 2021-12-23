@@ -44,6 +44,14 @@
 
         - 
 
+        - 
+
+        - 
+
+    - useSelector hook in react-redux:
+
+        - 
+
 
 1. Imp Links:
 
